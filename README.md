@@ -18,4 +18,10 @@
 ## Credit
 * Hackingwithswift https://www.hackingwithswift.com/100/19
 
+# Swift topics covered in this project
+
+
+## Project challenges
+
+## Solution preview
 
