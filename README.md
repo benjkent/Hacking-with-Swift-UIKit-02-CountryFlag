@@ -19,7 +19,8 @@
 * Hackingwithswift https://www.hackingwithswift.com/100/19
 
 # Swift topics covered in this project
-
+1. Asset Catalogs, a highly optimized was of importing and using images in IOS projects
+2.
 
 ## Project challenges
 
