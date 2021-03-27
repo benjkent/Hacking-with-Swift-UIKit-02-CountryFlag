@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
         button3.layer.borderWidth = 1
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
         askQuestion()
     }
     func askQuestion(action: UIAlertAction! = nil) {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "SCORE: \(score)", style: .plain, target: self, action: #selector(scoreRules))
         
         // randomly shuffle an array collection ** in place **
         countries.shuffle()
@@ -65,7 +66,17 @@ class ViewController: UIViewController {
         }
         
         let ac = UIAlertController(title: title, message: "Your Score is \(score).", preferredStyle: .alert)
+        
+        // WARNING: The handler askQuestion means - the name of the method to run
+        //                      askQuestion() means - run the askQuestion method right now.
+        // The style: has 3 value possiblilities. .default, .cancel, and .destructive
+        //            Each are different based on the IOS and have different user interface hints.
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
+    }
+    @objc func scoreRules() {
+        let ac = UIAlertController(title: "Score", message: "Get 7 correct, but 7 wrong and you lose", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "got it", style: .default, handler: nil))
         present(ac, animated: true)
     }
 }

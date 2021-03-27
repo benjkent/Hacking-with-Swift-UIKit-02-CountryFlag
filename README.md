@@ -27,8 +27,14 @@
 5. Creating a random number from a range.
 6. Create an action when a button is tapped. 
 7. Use button tag values to determine which button has been tapped.
-8. 
+8. Working with alert controllers to respond to user interactions
+9. Adding button elements to the navigation bar with code.
+10. 
 ## Project challenges
+* Show player's score in the navigaion bar
+* When the user touches the score text in navigation bar it displays the win loss rules. 
+* When the player reaches either the win or loss score present a "new game option".
+* When player guesses the wrong flag, tell them the name of the country flag they incorrectly selected.
 
 ## Solution preview
 
