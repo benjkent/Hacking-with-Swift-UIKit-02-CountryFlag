@@ -35,7 +35,7 @@ class ViewController: UIViewController {
         
         askQuestion()
     }
-    func askQuestion() {
+    func askQuestion(action: UIAlertAction! = nil) {
         
         // randomly shuffle an array collection ** in place **
         countries.shuffle()
@@ -50,5 +50,23 @@ class ViewController: UIViewController {
         title = countries[correctAnswer].uppercased()
     }
 
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        // check whether the answer is correct
+        // Adjust the score
+        // Show a correct or incorrect message.
+        var title: String
+        
+        if sender.tag == correctAnswer {
+            title = "Correct"
+            score += 1
+        } else {
+            title = "Incorrect"
+            score -= 1
+        }
+        
+        let ac = UIAlertController(title: title, message: "Your Score is \(score).", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+        present(ac, animated: true)
+    }
 }
 
