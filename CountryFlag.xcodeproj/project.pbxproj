@@ -25,6 +25,10 @@
 		747A33EB260E7EF500D04695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		747A33ED260E7EF500D04695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		747A33F4260E7FDE00D04695 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74A446B3261029F400DB3F38 /* viewController-correctAlertController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viewController-correctAlertController.png"; sourceTree = "<group>"; };
+		74A446B4261029F400DB3F38 /* viewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viewController.png; sourceTree = "<group>"; };
+		74A446B5261029F400DB3F38 /* viewController-incorrectAlertControler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viewController-incorrectAlertControler.png"; sourceTree = "<group>"; };
+		74A446B6261029F400DB3F38 /* viewController-scoreAlertController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "viewController-scoreAlertController.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,10 @@
 		747A33D3260E7EF500D04695 = {
 			isa = PBXGroup;
 			children = (
+				74A446B4261029F400DB3F38 /* viewController.png */,
+				74A446B5261029F400DB3F38 /* viewController-incorrectAlertControler.png */,
+				74A446B3261029F400DB3F38 /* viewController-correctAlertController.png */,
+				74A446B6261029F400DB3F38 /* viewController-scoreAlertController.png */,
 				747A33F4260E7FDE00D04695 /* README.md */,
 				747A33DE260E7EF500D04695 /* CountryFlag */,
 				747A33DD260E7EF500D04695 /* Products */,
