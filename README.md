@@ -33,15 +33,15 @@
 ## Project challenges
 * Show player's score in the navigaion bar
 * When the user touches the score text in navigation bar it displays the win loss rules. 
-* When the player reaches either the win or loss score present a "new game option".
+* When the player reaches either the win or loss score, present a "new game option".
 * When player guesses the wrong flag, tell them the name of the country flag they incorrectly selected.
 
 ## Solution preview
 
 | viewController | viewController | viewController | viewController |
 | :---------------: | :---------------: | :---------------: | :---------------: |
-|                         | incorrect answer | correct ansewer | score selected |
-| <img src="https://gihub.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewController.png"> |    <img src="https://gihub.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewController.png"> | <img src="https://gihub.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewController.png"> | <img src="https://gihub.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewController.png"> |
+|                         | incorrect answer | correct answer | score tapped selected |
+| <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewContoller.png"> |    <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-incorrect.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Correct.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Score.png"> |
 
 
 
