@@ -57,12 +57,15 @@ class ViewController: UIViewController {
         // Show a correct or incorrect message.
         var title: String
         
+        
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
+            // Check to see if it is the winning score. 7
         } else {
             title = "Incorrect"
             score -= 1
+            // check to see if it is the losing score -7
         }
         
         let ac = UIAlertController(title: title, message: "Your Score is \(score).", preferredStyle: .alert)
@@ -78,6 +81,12 @@ class ViewController: UIViewController {
         let ac = UIAlertController(title: "Score", message: "Get 7 correct, but 7 wrong and you lose", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "got it", style: .default, handler: nil))
         present(ac, animated: true)
+    }
+    func checkScore(currentScore: Int) -> Bool{
+        if currentScore == 7 {
+            return true
+        }
+        return false
     }
 }
 
