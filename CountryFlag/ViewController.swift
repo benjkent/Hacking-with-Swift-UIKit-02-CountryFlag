@@ -63,7 +63,7 @@ class ViewController: UIViewController {
             score += 1
             // Check to see if it is the winning score. 7
         } else {
-            title = "Incorrect"
+            title = "Incorrect that's \(countries[sender.tag].capitalized)'s flag"
             score -= 1
             // check to see if it is the losing score -7
         }
