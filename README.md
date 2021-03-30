@@ -42,6 +42,7 @@
 | :---------------: | :---------------: | :---------------: | :---------------: |
 |                         | incorrect answer | correct answer | score tapped selected |
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/viewContoller.png"> |    <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-incorrect.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Correct.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Score.png"> |
+| | | | |
 | viewController | viewController |   |  |
 | lost game | won game | | |
 | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Loss.png"> | <img src="https://github.com/benjkent/Hacking-with-Swift-UIKit-02-CountryFlag/blob/main/screenshots/AlertController-Winner.png"> |  |  | 
