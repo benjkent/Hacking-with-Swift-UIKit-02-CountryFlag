@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var score: Int = 0
     var correctAnswer: Int = 0
     var winner: Bool = false
-    var loser: Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +39,6 @@ class ViewController: UIViewController {
     func askQuestion(action: UIAlertAction! = nil) {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "SCORE: \(score)", style: .plain, target: self, action: #selector(scoreRules))
         
-        
             // randomly shuffle an array collection ** in place **
             countries.shuffle()
             
@@ -54,11 +53,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        // check whether the answer is correct
-        // Adjust the score
-        // Show a correct or incorrect message.
+        
         var title: String
         var status: Bool
+        
         if sender.tag == correctAnswer {
             title = "Correct"
             score += 1
@@ -83,24 +81,18 @@ class ViewController: UIViewController {
             //            Each are different based on the IOS and have different user interface hints.
             ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
             present(ac, animated: true)
+            
         } else if status == true && winner == true {
             let ac = UIAlertController(title: "Winner", message: "Your Score is \(score).", preferredStyle: .alert)
             
-            // WARNING: The handler askQuestion means - the name of the method to run
-            //                      askQuestion() means - run the askQuestion method right now.
-            // The style: has 3 value possiblilities. .default, .cancel, and .destructive
-            //            Each are different based on the IOS and have different user interface hints.
-            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            ac.addAction(UIAlertAction(title: "New Game", style: .default, handler: askQuestion))
             present(ac, animated: true)
             gameReset()
+            
         } else {
             let ac = UIAlertController(title: "Game Over", message: "Sorry, try again?", preferredStyle: .alert)
             
-            // WARNING: The handler askQuestion means - the name of the method to run
-            //                      askQuestion() means - run the askQuestion method right now.
-            // The style: has 3 value possiblilities. .default, .cancel, and .destructive
-            //            Each are different based on the IOS and have different user interface hints.
-            ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
+            ac.addAction(UIAlertAction(title: "New Game", style: .default, handler: askQuestion))
             present(ac, animated: true)
             gameReset()
         }
@@ -108,7 +100,7 @@ class ViewController: UIViewController {
     }
     @objc func scoreRules() {
         let ac = UIAlertController(title: "Score", message: "Get 7 correct, but 7 wrong and you lose", preferredStyle: .alert)
-        ac.addAction(UIAlertAction(title: "got it", style: .default, handler: nil))
+        ac.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
         present(ac, animated: true)
     }
     func winOrLoss(currentScore: Int) -> Bool{
@@ -116,14 +108,13 @@ class ViewController: UIViewController {
             winner = true
             return true
         } else if currentScore == -7{
-            loser = true
+            
             return true
         }
         return false
     }
     func gameReset(){
         winner = false
-        loser = false
         score = 0
     }
 }
