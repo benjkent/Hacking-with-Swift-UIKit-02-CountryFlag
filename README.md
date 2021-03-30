@@ -29,7 +29,7 @@
 7. Use button tag values to determine which button has been tapped.
 8. Working with alert controllers to respond to user interactions
 9. Adding button elements to the navigation bar with code.
-10. 
+ 
 ## Project challenges
 * Show player's score in the navigaion bar
 * When the user touches the score text in navigation bar it displays the win loss rules. 
